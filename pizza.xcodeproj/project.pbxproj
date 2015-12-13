@@ -15,6 +15,10 @@
 		218EF5131C1B4F6700A22369 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 218EF5111C1B4F6700A22369 /* LaunchScreen.storyboard */; };
 		218EF51E1C1B4F6800A22369 /* pizzaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218EF51D1C1B4F6800A22369 /* pizzaTests.swift */; };
 		218EF5291C1B4F6800A22369 /* pizzaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218EF5281C1B4F6800A22369 /* pizzaUITests.swift */; };
+		218EF5371C1B6C9400A22369 /* TipoMasa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218EF5361C1B6C9400A22369 /* TipoMasa.swift */; };
+		218EF5391C1C7B3B00A22369 /* TipoQueso.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218EF5381C1C7B3B00A22369 /* TipoQueso.swift */; };
+		218EF53B1C1CA04800A22369 /* TipoIngrediente.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218EF53A1C1CA04800A22369 /* TipoIngrediente.swift */; };
+		218EF53D1C1E00BB00A22369 /* Confirmacion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218EF53C1C1E00BB00A22369 /* Confirmacion.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		218EF5241C1B4F6800A22369 /* pizzaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pizzaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		218EF5281C1B4F6800A22369 /* pizzaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pizzaUITests.swift; sourceTree = "<group>"; };
 		218EF52A1C1B4F6800A22369 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		218EF5361C1B6C9400A22369 /* TipoMasa.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipoMasa.swift; sourceTree = "<group>"; };
+		218EF5381C1C7B3B00A22369 /* TipoQueso.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipoQueso.swift; sourceTree = "<group>"; };
+		218EF53A1C1CA04800A22369 /* TipoIngrediente.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipoIngrediente.swift; sourceTree = "<group>"; };
+		218EF53C1C1E00BB00A22369 /* Confirmacion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Confirmacion.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +110,10 @@
 				218EF5061C1B4F6700A22369 /* AppDelegate.swift */,
 				218EF5081C1B4F6700A22369 /* FirstViewController.swift */,
 				218EF50A1C1B4F6700A22369 /* SecondViewController.swift */,
+				218EF53C1C1E00BB00A22369 /* Confirmacion.swift */,
+				218EF53A1C1CA04800A22369 /* TipoIngrediente.swift */,
+				218EF5361C1B6C9400A22369 /* TipoMasa.swift */,
+				218EF5381C1C7B3B00A22369 /* TipoQueso.swift */,
 				218EF50C1C1B4F6700A22369 /* Main.storyboard */,
 				218EF50F1C1B4F6700A22369 /* Assets.xcassets */,
 				218EF5111C1B4F6700A22369 /* LaunchScreen.storyboard */,
@@ -196,6 +208,7 @@
 				TargetAttributes = {
 					218EF5021C1B4F6700A22369 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 3F9XQ83WZZ;
 					};
 					218EF5181C1B4F6800A22369 = {
 						CreatedOnToolsVersion = 7.2;
@@ -259,9 +272,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				218EF5391C1C7B3B00A22369 /* TipoQueso.swift in Sources */,
 				218EF50B1C1B4F6700A22369 /* SecondViewController.swift in Sources */,
+				218EF53B1C1CA04800A22369 /* TipoIngrediente.swift in Sources */,
+				218EF53D1C1E00BB00A22369 /* Confirmacion.swift in Sources */,
 				218EF5071C1B4F6700A22369 /* AppDelegate.swift in Sources */,
 				218EF5091C1B4F6700A22369 /* FirstViewController.swift in Sources */,
+				218EF5371C1B6C9400A22369 /* TipoMasa.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,10 +420,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = pizza/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = xquared.pizza;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -414,10 +434,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = pizza/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = xquared.pizza;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
